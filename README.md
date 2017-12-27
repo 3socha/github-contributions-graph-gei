@@ -31,6 +31,14 @@
 
 ## ハックする
 
-GitHub Contributions Graph [🔍検索]()
+[ github contributions graph hack ] [🔍検索](https://www.google.co.jp/search?q=github+contributions+graph+hack&tbm=isch)
 
-https://www.google.co.jp/search?q=github+contributions+graph+hack
+---
+
+## Contributions Graph もどきをシェル芸で
+
+```
+$ cat /dev/urandom | xxd -p | head -20 | grep -o . | awk '{switch($0){case 1:v=150;break;case 2:v=113;break;case 3:v=65;break;case 4:v=22;break;default: v=254}printf "\033[38;5;"v"m■ "}' | grep -oP '(?:\e[^\e]*){7}' | head -52 | rs -T | sed -E 's/ +/ /g'
+```
+
+
